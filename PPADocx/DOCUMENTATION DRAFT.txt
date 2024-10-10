@@ -1,0 +1,29 @@
+DOCUMENTATION DRAFT
+------------------------
+
+Install PHP
+	Set PHP Path
+		Control Panel > System > Advanced System Settings > Environment Variables
+		select Path and click Edit
+		New and add C:\xampp\php
+		
+Install Web Server Apache (Xampp)
+Install Database MySQL (Xampp)
+
+Configure VS Code for PHP Development
+	PHP Intelephense
+	PHP Debug
+		Enable debugging in Xdebug
+		>on C:\xampp\php\php.ini
+			add:
+			[Xdebug]
+			zend_extension = "C:\xampp\php\ext\php_xdebug.dll"
+			xdebug.mode = debug
+			xdebug.start_with_request = yes
+			xdebug.client_port = 9003
+		Restart Apache
+		Run > Add Configuration and select PHP = creates a launch.json
+	PHP Extension Pack
+
+Install Composer
+	
